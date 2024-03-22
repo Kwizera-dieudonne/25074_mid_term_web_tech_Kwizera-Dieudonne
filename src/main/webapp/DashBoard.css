@@ -1,0 +1,471 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: tahoma, arial;
+}
+.page {
+    display: flex;
+}
+.page .sidebar {
+    width: 260px;
+    background-color:#000080;
+    padding: 20px;
+    color: #fff;
+}
+.page .sidebar h3 {
+    text-align: center;
+    font-weight:bold;
+    font-size:1rem;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+}
+.sides{
+	display:flex;
+}
+.sides a{
+	text-decoration: none;
+	color:white;
+}
+.sides a:visited{
+	color:white;
+}
+
+.sidebar:visited{
+	color:white;
+}
+.page .sidebar .links ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+.page .sidebar .links li {
+    padding: 10px;
+}
+.page .sidebar .links a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    border-radius: 6px;
+}
+.page .sidebar .links a.active {
+    background-color: rgb(238 238 238 / 30%);
+}
+.page .sidebar .links a:hover {
+    background-color: rgb(238 238 238 / 15%);
+}
+.content-area {
+    background-color: #eee;
+    width: calc(100% - 260px);
+}
+.content-area .content{
+	  margin: 30px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+}
+.content .homes{
+	height: 100vh;
+	background-color: 000080;
+	color:white;
+}
+form {
+    margin-bottom: 20px; /* Add some margin at the bottom of the form */
+}
+
+.table-responsive {
+    overflow-x: auto; /* Add horizontal scroll for the table if it's too wide */
+}
+.content-area .content h3 {
+    background-color: #e91e63;
+    color: #fff;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 0 0 6px 0;
+    margin: -30px;
+}
+.content-area .special {
+    padding-top: 40px;
+}
+.content-area .content .personal-information {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.content-area label {
+    padding: 10px 0;
+    display: block;
+    width: fit-content;
+    font-weight: bold;
+}
+.content-area .content input,
+textarea,
+select {
+    padding: 10px;
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #fafafa;
+    border-bottom: 1px solid #e2e2e2;
+    outline: none;
+}
+.content textarea {
+    height: 200px;
+}
+.content-area .content .experience,
+.notes,
+.hardweare {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.content-area .content .hardweare .box div {
+    background-color: #fafafa;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.content-area .content .hardweare input {
+    display: inline;
+    width: 10px;
+}
+.content-area .content .hardweare label {
+    display: unset;
+}
+.content-area .content .hardweare .one {
+    border-bottom: 1px solid #efefef;
+}
+.content-area .content .hardweare .first {
+    margin-top: 40px;
+}
+.content-area .content .hardweare .second {
+    margin-top: 10px;
+}
+.content-area .content button{
+    width: 100%;
+    padding: 10px;
+    background-color: #000080;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top:1rem;
+}
+
+
+/*Student Details table*/
+
+
+
+
+
+.table-container {
+    padding: 0 40px;
+}
+table {
+    font-family: "Lato", arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-weight:700;
+
+}
+
+thead {
+    background-color: #F0F3F7;
+    font-size:11px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: .3px;
+    border-radius: 4px;
+    padding-left: 20px;
+}
+
+th:first-child {
+    padding-left: 20px;
+}
+
+th {
+    padding:20px 0;
+}
+
+
+
+.dashboard-table-image {
+    width: 72px;
+    height: 48px;
+    border-radius: 4px;
+    margin: 20px;
+
+    object-fit: cover;
+    object-position: center right;
+}
+
+.dashboard-table-flex-container {
+    display:flex;
+}
+
+.dashboard-table-image{
+    display:block;
+}
+
+.dashboard-table-name-location-container {
+    display:flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.dashboard-table-property-name {
+    font-size: 16px;
+}
+
+.dashboard-table-property-location {
+    font-size: 14px;
+    color: #90A0AD;
+
+}
+
+.table-row {
+    border-bottom: 1px solid #D3D4DF;
+}
+
+.project-status-pill {
+    padding: 6px 12px;
+    border-radius: 2px;
+    display:inline-block;
+    color: white;
+    text-transform:uppercase;
+    font-size: 12px;
+}
+
+.pill-green {
+    background-color: #2EBF6F;
+}
+
+.pill-gray {
+    background-color: #848892;
+}
+
+.dashboard-table-action-icon-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dashboard-table-action-icon {
+    height:16px;
+    width: 16px;
+    color: #8797A8;
+    margin-right: 10px;
+}
+
+/*Academic Unit Table*/
+
+
+/* Styles for the main form wrapper */
+
+.formbold-main-wrapper,h1 {
+    margin-top:-370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: 000080;
+    color:white;
+}
+h1{
+	font-weight:bold;
+	  background-color: 000080;
+    color:white;
+}
+/* Styles for the form wrapper */
+.form-wrapper {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Styles for the form labels */
+.form-label {
+    font-weight: bold;
+    margin-right: 10px;
+    margin-left: 50px;
+}
+
+/* Styles for the form inputs */
+.form-inputs {
+    padding: 10px;
+    margin: 10px 0;
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Styles for the form select */
+.form-inputs select {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.cl-form-left{
+    float: left;
+    width: 50%;
+}
+.cl-form-right{
+    float: right;
+    width: 50%;
+
+}
+
+/* Styles for the form submit button */
+.formbold-btn {
+    background-color: #00f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 150px;
+    margin-left: 600px;
+}
+
+/* Styles for the form error messages */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Styles for the form image preview */
+.imgPreview {
+    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Styles for the hidden form image preview */
+.hidden {
+    display: none;
+}
+
+/*save Accademics*/
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the form labels */
+.form-wrapper label {
+    font-weight: bold;
+    margin-right: 10px;
+    margin-left: 50px;
+}
+
+/* Styles for the form inputs */
+.form-wrapper input,
+.form-wrapper select {
+    padding: 10px;
+    margin: 10px 0;
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Styles for the form select */
+.form-wrapper select {
+    width: 50%; /* Override the width specifically for select elements */
+}
+
+/* Styles for the form submit button */
+.form-wrapper input[type="submit"] {
+    background-color: red;
+    color: red;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 70px;
+    margin: 40px;
+     /* Adjust the margin as needed */
+}
+
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for the custom table */
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+.custom-table thead {
+    background-color: #f0f3f7;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.custom-table th, .custom-table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+.custom-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.custom-table a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.custom-table a:hover {
+    text-decoration: underline;
+}
+
+/* Add these CSS rules to make each section take the whole screen height with overflow when needed */
+
+#form-wrapper,
+#wrapper,
+#student-details,
+#Display-Semester,
+#Course,
+#saveSemester,
+#Course-Definition,
+#List-Course-Definition {
+    height: 100vh;
+    overflow: auto;
+}
+
+
+
+
+

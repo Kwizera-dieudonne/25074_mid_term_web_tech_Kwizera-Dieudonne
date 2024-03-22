@@ -1,0 +1,52 @@
+
+body{
+	padding:0;
+	border:0;
+}
+.container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 100vh;
+	width:100vw;
+	gap:50;
+}
+.sidebar_content{
+	display: flex;
+	flex-direction: column;
+	gap:10;
+	margin-right: 15rem;
+	margin-left: 4rem;
+}
+.social_media{
+	background-color: #d3d3d3;
+	margin-top: 2rem;
+	padding: 10px;
+	height: 30%;
+	width: 100%
+}
+.social_media h1{
+	color:blue;
+}
+.news{
+	background-color: #d3d3d3;
+	margin-top: 2rem;
+	padding: 10px;
+	height: 30%;
+	width: 100%
+}
+.news h1{
+	color:blue;
+}
+.main_content{
+	background-color: #d3d3d3;
+	margin-top: 2rem;
+	padding: 10px;
+	height: 30%;
+	width: 100%;
+	margin-right: 3rem;
+}
+.main_content h1{
+	color:blue;
+	
+}

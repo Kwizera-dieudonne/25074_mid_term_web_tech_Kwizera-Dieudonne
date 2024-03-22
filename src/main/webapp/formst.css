@@ -1,0 +1,103 @@
+*{
+	padding:0;
+	margin: 0;
+}
+body{
+	margin:1rem;
+	background-color:#000080;
+	color:white;
+	font-family: tahoma, arial;
+}
+.stud{
+	margin-top:4rem;
+	background-color: white;
+	color:black;
+	display:flex;
+	flex-direction: column;
+	height: 90vh;
+}
+.stud h2{
+	color:#000080;
+	font-weight: bold;
+	font-size: 2rem;
+	text-align: center;
+	margin-top:1rem;
+}
+.stud form{
+	margin:1rem;
+}
+.stud select{
+	padding: 10px;
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #fafafa;
+    border-bottom: 1px solid #e2e2e2;
+    outline: none;
+}
+.stud button{
+	 width: 100%;
+    padding: 10px;
+    background-color: #000080;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top:1rem;
+}
+.stud label{
+	padding: 10px 0;
+    display: block;
+    width: fit-content;
+    font-weight: bold;
+}
+
+table {
+    font-family: "Lato", arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    font-weight:700;
+    margin-left:6rem;
+
+}
+
+thead {
+    background-color: #F0F3F7;
+    font-size:11px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: .3px;
+    border-radius: 4px;
+    padding-left: 20px;
+    margin-top:15px;
+    margin-left:1rem;
+}
+
+th:first-child {
+    padding-left: 20px;
+}
+
+th {
+    padding:20px 0;
+}
+ .stud a{
+ text-decoration: none;
+ color: blue;
+ text-align: center;
+ margin-top: 10rem;
+ margin-bottom: 50px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
