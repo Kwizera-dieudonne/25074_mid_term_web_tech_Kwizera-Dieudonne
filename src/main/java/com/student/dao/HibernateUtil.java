@@ -27,7 +27,7 @@ public class HibernateUtil {
 				settings.put(Environment.DRIVER, "org.postgresql.Driver");
 				settings.put(Environment.URL, "jdbc:postgresql://localhost:5432/Admission");
 				settings.put(Environment.USER, "postgres");
-				settings.put(Environment.PASS, "1");
+				settings.put(Environment.PASS, "Kwizera20022");
 				settings.put(Environment.DIALECT, "org.hibernate.dialect.PostgreSQLDialect");
 				settings.put(Environment.SHOW_SQL, "true");
 				settings.put(Environment.CURRENT_SESSION_CONTEXT_CLASS, "thread");

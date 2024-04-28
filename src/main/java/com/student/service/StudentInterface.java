@@ -17,4 +17,5 @@ public interface StudentInterface {
 
     void updateStudent(Student student)throws RemoteException;
     Student authenticate(String email, String password) throws RemoteException;
+    Student searchStudentByRegNo(String regNo) throws RemoteException;
 }

@@ -6,7 +6,7 @@
 <%@ page import="com.student.domain.Student" %>
 
 
-<jsp:useBean id="student" class="com.student.domain.Student" scope="session" />
+<jsp:useBean id="students" class="com.student.domain.Student" scope="session" />
 <%
     try {
     	String studentid=request.getParameter("regNo");
@@ -15,23 +15,22 @@
     	String email=request.getParameter("email");
     	String phone=request.getParameter("phone");
     	String date=request.getParameter("dateOfBirth");
-    	String password=request.getParameter("password");
     	if(!studentid.isEmpty() && studentid !=null || !fname.isEmpty() && fname !=null || !lname.isEmpty() && lname !=null || !email.isEmpty() && email !=null
-    			|| !phone.isEmpty() && phone !=null || !date.isEmpty() && date !=null || !password.isEmpty() && password !=null){
-        student.setRegNo(studentid);
-        student.setFirstName(fname);
-        student.setLastName(lname);
-        student.setEmail(email);
-        student.setPhone(phone);
-        student.setDob(date);
-        student.setPassword(password);
+    			|| !phone.isEmpty() && phone !=null || !date.isEmpty() && date !=null){
+        students.setRegNo(studentid);
+        students.setFirstName(fname);
+        students.setLastName(lname);
+        students.setEmail(email);
+        students.setPhone(phone);
+        students.setDob(date);
+        
 
         
         StudentInterface studentInt = new StudentImpl();
-        studentInt.insertStudent(student);
+        studentInt.insertStudent(students);
        
           request.setAttribute("message", "Saved successfully!");
-            request.getRequestDispatcher("Login.jsp").forward(request, response);
+            request.getRequestDispatcher("home.jsp").forward(request, response);
     	}
     	else{
     		request.setAttribute("message", "Provide All! Info");

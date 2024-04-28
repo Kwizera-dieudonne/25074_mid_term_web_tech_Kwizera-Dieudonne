@@ -9,6 +9,7 @@
 <%@ page import="com.student.domain.Student" %>
 
 
+
 <jsp:useBean id="student" class="com.student.domain.Users" scope="session" />
 <%
     try {
@@ -18,6 +19,8 @@
     	UsersService users=new UsersImplementation();
     	Users user=users.authenticate(email, password);
     	if(user !=null){
+    		
+    		
             session.setAttribute("userRole", user.getRoles());
 
     		if(user.getRoles().equalsIgnoreCase("admin")){

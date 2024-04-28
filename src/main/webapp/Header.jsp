@@ -25,7 +25,7 @@
         if (userRole.equalsIgnoreCase("admin")) {
 %>
             <li class="link"><a href="/">Home</a></li>
-			<li class="link"><a href="/">About</a></li>
+			<li class="link"><a href="ErrorPage.jsp">About</a></li>
 			<li class="link"><a href="/">Admission</a></li>
 			<li class="link"><a href="StudentHome.jsp">Academics</a></li>
              <li class="link"><a href="TeacherHome.jsp">Media Center</a></li>
@@ -36,7 +36,7 @@
         } else if (userRole.equalsIgnoreCase("teacher")) {
 %>
         <li class="link"><a href="/">Home</a></li>
-			<li class="link"><a href="/">About</a></li>
+		<li class="link"><a href="ErrorPage.jsp">About</a></li>
 			<li class="link"><a href="/">Admission</a></li>
              <li class="link"><a href="TeacherHome.jsp">Media Center</a></li>
               <li class="link"><a href="TeacherHome.jsp">Research</a></li>
@@ -45,7 +45,7 @@
         else if (userRole.equalsIgnoreCase("student")) {
         	%>
         	        <li class="link"><a href="/">Home</a></li>
-        				<li class="link"><a href="/">About</a></li>
+        			<li class="link"><a href="ErrorPage.jsp">About</a></li>
         				<li class="link"><a href="/">Admission</a></li>
         	             <li class="link"><a href="StudentHome.jsp">Academics</a></li>
         	              <li class="link"><a href="StudentRegistration.jsp">Apply</a></li>
@@ -54,6 +54,7 @@
         
     }
 %>
+ <li class="link"><a href="index.jsp">Logout</a></li>
 
 </ul>
 </div>

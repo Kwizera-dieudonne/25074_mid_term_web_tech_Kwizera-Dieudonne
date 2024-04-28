@@ -22,13 +22,14 @@
             <select id="role" name="role">
                    <option value="teacher">teacher</option>
                    <option value="student">student</option>
+                   <!-- <option value="admin">admin</option> -->
               </select>
             <br>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" value="" placeholder="Enter your Password" >
             <br>
             <button class="btn" type="submit" value="Signup">SignUp</button>
-            <p>Already Have an Account? <a href="Login.jsp">Login</a></p>
+            <p>Already Have an Account? <a href="index.jsp">Login</a></p>
             
         </form>
     </div>

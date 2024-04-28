@@ -45,6 +45,6 @@
 <body>
 <h1>Error 😒</h1>
     ${message}
-<p><a href="DashBoard.jsp">Return to Dashboard</a></p>
+<p><a href="home.jsp">Return to Home</a></p>
 </body>
 </html>

@@ -2,7 +2,7 @@
     pageEncoding="ISO-8859-1"%>
     <%@ page import="com.student.service.*" %>
     <%@ page import="com.student.domain.Users" %>
-<jsp:useBean id="users" class="com.student.domain.Users" scope="session"/>
+<jsp:useBean id="userss" class="com.student.domain.Users" scope="session"/>
 <%
  try{
 	String fname=request.getParameter("firstName");
@@ -10,6 +10,7 @@
  	String email=request.getParameter("email");
  	String role=request.getParameter("role");
  	String password=request.getParameter("password");
+ 	Users users=new Users();
  	if(!fname.isEmpty() && fname !=null || !lname.isEmpty() && lname !=null || !email.isEmpty() && email !=null
 			|| !role.isEmpty() && role !=null || !password.isEmpty() && password !=null){
  		users.setFirstName(fname);
@@ -20,7 +21,7 @@
  		UsersService user=new UsersImplementation();
  		user.insertUsers(users);
       request.setAttribute("message", "Saved successfully!");
-        request.getRequestDispatcher("Login.jsp").forward(request, response);
+        request.getRequestDispatcher("index.jsp").forward(request, response);
 	}
 	else{
 		request.setAttribute("message", "Provide All! Info");

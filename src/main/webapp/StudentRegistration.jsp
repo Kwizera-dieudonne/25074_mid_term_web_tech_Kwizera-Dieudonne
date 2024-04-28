@@ -29,7 +29,6 @@
             
             <br>
             <button class="btn" type="submit" value="Signup">Register</button>
-            <p>Already Have an Account? <a href="Login.jsp">Login</a></p>
             
         </form>
     </div>

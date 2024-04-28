@@ -147,6 +147,35 @@ public class StudentDao {
 	        }
 	    }
 	
+	public Student searchStudentByRegNo(String regNo) {
+        Transaction transaction = null;
+        Student student = null;
+        Session session = HibernateUtil.getsession().openSession();
+
+        try {
+            transaction = session.beginTransaction();
+            // Query to retrieve the student by registration number
+            Query query = session.createQuery("from Student where regNo = :regNo");
+            query.setParameter("regNo", regNo);
+            // Retrieve the student
+            List<Student> students = query.list();
+            if (!students.isEmpty()) {
+                student = students.get(0); // Assuming registration numbers are unique
+            }
+            transaction.commit();
+        } catch (Exception e) {
+            if (transaction != null) {
+                transaction.rollback();
+            }
+            e.printStackTrace();
+        } finally {
+            if (session != null) {
+                session.close();
+            }
+        }
+        return student;
+    }
+	
 	
 	 public Student authenticate(String email, String password) {
 	        Session session = HibernateUtil.getsession().openSession();

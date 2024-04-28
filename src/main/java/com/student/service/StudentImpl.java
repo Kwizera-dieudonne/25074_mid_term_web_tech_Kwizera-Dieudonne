@@ -46,5 +46,11 @@ public class StudentImpl implements StudentInterface {
 		// TODO Auto-generated method stub
 		return dao.authenticate(email, password);
 	}
+	
+	@Override
+    public Student searchStudentByRegNo(String regNo) throws RemoteException {
+       
+        return dao.searchStudentByRegNo(regNo);
+    }
 
 }

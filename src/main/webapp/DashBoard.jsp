@@ -160,6 +160,8 @@
                         <th>Academic Unit</th>
                         <th>Semester</th>
                         <th>Courses</th>
+                        <th>Course Name</th>
+                        <th>Actions</th>
                     </tr>
                     </thead>
                    <tbody>
@@ -185,6 +187,13 @@
                         	<%
                         }
                         %>
+                        <td>
+                        	<button onclick="editStudent(<%= regist.getStudent().getRegNo() %>)">Edit</button>
+                    		
+                        </td>
+                        <td>
+                        <button onclick="deleteStudent(<%= regist.getStudent().getRegNo() %>)">Delete</button>
+                        </td>
                     </tr>
                     <%
                         }
